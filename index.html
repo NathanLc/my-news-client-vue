@@ -18,7 +18,7 @@
           <div class="loader" v-if="categoriesLoading">
             Loading categories...
           </div>
-          <ul class="categories-list" v-if="!categoriesLoading">
+          <ul class="categories-list" v-else>
             <category-item
               v-for="category in categories"
               v-on:select-category="selectCategory"
@@ -36,7 +36,7 @@
         <div class="loader" v-if="articlesLoading">
           Loading articles...
         </div>
-        <div class="articles-list" v-if="!articlesLoading">
+        <div class="articles-list" v-else>
           <blog-post
             v-for="article in articles"
             :key="article.id"
