@@ -1,0 +1,66 @@
+:root {
+  --bg-color: #DDDDDD;
+  --fg-color: #333333;
+  --fg-color--darker: black;
+  --fg-color--lighter: #888888;
+}
+
+a {
+  color: var(--fg-color--lighter);
+  cursor: pointer;
+}
+a:hover {
+  color: var(--fg-color--darker);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--fg-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  padding: 8px 16px;
+}
+
+.articles-list {
+  border: 1px solid var(--fg-color);
+  border-width: 1px 0 0 1px;
+  padding: 0;
+}
+
+.article {
+  border-bottom: 1px solid var(--fg-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.article-actions input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.article-datetime {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.article-link {
+  margin-left: 4px;
+}
+.article-link i {
+  font-size: 1rem;
+  vertical-align: baseline;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.toggle-categories {
+  display: block;
+  margin-bottom: 8px;
+}
